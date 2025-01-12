@@ -73,14 +73,14 @@ nav:hover ul {
 
 
 nav:hover #color-1 {
-    height:253px;
+    height:254px;
     background-color:#DCFF16;
     transition: all 2s;
     z-index: 2;
 }
 
 nav:hover #color-2 {
-    height:253px;
+    height:254px;
     background-color:#F1325C;
     transition: all 2s;
     z-index: 2;
