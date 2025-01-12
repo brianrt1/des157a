@@ -1,0 +1,375 @@
+
+.grid section {
+    background-color: aqua;
+    max-width: 400px;
+    height: 250px;
+   
+}
+
+
+
+nav:hover ul {
+    
+    right: 0px;
+    animation-duration: 3s;
+     animation-name: fade-in;
+     animation-fill-mode: forwards;
+    
+}
+
+.dropdown-button:hover {
+    position:relative;
+    transform: rotate(90deg);
+    padding-left:30px;
+    left:11px;
+    top:85px;
+
+}
+
+.backdrop-1{
+    position: relative;
+    background-color:#DCFF16;
+    top: -50px;
+    height: 0px;
+    width: 400px;
+    z-index: 2;
+    max-width: 100%;
+
+}
+
+.backdrop-2{
+    position: relative;
+    background-color:#F1325C;
+    top: -100px;
+    height: 0px;
+    width: 400px;
+    z-index: 2;
+    max-width: 100%;
+
+}
+
+.backdrop-3{
+    position: relative;
+    background-color:#4EF5FB;
+    top: -100px;
+    height: 0px;
+    width: 400px;
+    z-index: 2;
+    max-width: 100%;
+
+}
+
+.backdrop-4{
+    position: relative;
+    background-color:#F45831;
+    top: -100px;
+    height: 0px;
+    width: 400px;
+    z-index: 2;
+    max-width: 100%;
+
+}
+
+
+
+nav:hover #color-1 {
+    height:252px;
+    background-color:#DCFF16;
+    transition: all 2s;
+    z-index: 2;
+}
+
+nav:hover #color-2 {
+    height:252px;
+    background-color:#F1325C;
+    transition: all 2s;
+    z-index: 2;
+}
+
+nav:hover #color-3 {
+    height:300px;
+    background-color:#4EF5FB;
+    transition: all 2s;
+    z-index: 2;
+}
+
+nav:hover #color-4 {
+    height:300px;
+    background-color:#F45831;
+    transition: all 2s;
+    z-index: 2;
+}
+
+
+nav ul {
+    position: relative;
+    top: 125px;
+    right:5000px;
+    z-index: 3;
+  
+}
+
+
+
+
+nav ul li {
+    max-width:400px;
+    height: 50px;
+    align-content: center;
+    /* background-color: #F1325C; */
+
+
+}
+
+.grid section {
+    padding: 0px;
+    display:flex;
+    justify-content: left;
+    flex-direction: column;
+    text-align: left;
+}
+
+body {
+    text-align: center;
+}
+
+section h1 {
+    position:relative;
+    margin: 0;
+    padding-top: 20px;
+    top:20px;
+    font-size: 45px;
+    padding-left: 30px;
+    font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+    
+}
+
+#red {
+ color: #F53E3E;
+}
+
+#yellow {
+ color:#DCFF16;
+}
+
+#Research {
+    background-color: #DCFF16;
+}
+
+#MadLibs {
+    background-color: #F1325C;
+}
+
+#EveryPicture {
+    background-color: #4EF5FB;
+}
+#GameOn {
+    background-color: #F45831;
+}
+
+nav li {
+    
+    list-style: none;
+    
+}
+
+nav li a{ 
+    text-decoration: none;
+    font-size: 32px;
+    font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  
+
+}
+
+.dropdown-menu1 img {
+    position:relative;
+    top:100px;
+    z-index:1;
+    padding-left:30px;
+}
+
+.dropdown-menu2 img {
+    position:relative;
+    top:100px;
+    z-index:1;
+    padding-left:30px;
+}
+
+.dropdown-menu3 img {
+    position:relative;
+    top:100px;
+    z-index:1;
+    padding-left:30px;
+}
+
+
+.dropdown-menu4 img {
+    position:relative;
+    top:100px;
+    z-index:1;
+    padding-left:30px;
+}
+
+.heading {
+    position: relative;
+    font-size: 120px;
+    font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  transform: rotate(90deg);
+  top: 200px;
+  z-index: 4;
+
+  
+}
+
+
+
+.heading-card {
+    position: relative;
+    text-align: left;
+    max-width: 100x;
+    z-index: 4;
+    top:-200px;
+
+}
+
+.card-container {
+    width:100px;
+    z-index: 4;
+}
+
+.card-container-2 {
+    width:100px;
+    z-index: 4;
+}
+
+footer {
+
+    
+    padding-top:100px;
+  
+}
+
+footer p{
+
+    position: relative;
+    font-size: 18px;
+    font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  top: -80px;
+  
+  
+}
+
+.grid {
+    padding-top: 200px;
+}
+
+.heading-card-2 {
+    position:relative;
+    top: -100px;
+    left: -100px;
+    animation-name: slide-in;
+    animation-duration: 2s;
+}
+
+body {
+    background-color: rgb(250, 247, 241);  
+}
+
+@keyframes fade-in {
+    from {
+     opacity: 0%;
+    }
+  
+    to {
+     opacity: 1%
+    }
+    from {
+        opacity: 1%;
+       }
+     
+       to {
+        opacity: 100%
+       }
+}
+
+@keyframes slide-in {
+    from {
+     transform: translateX(-500px);
+    }
+     
+       to {
+        transform: translateX(0px);
+       }
+}
+
+
+
+
+
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: rgb(250, 247, 241);  
+    }
+    .grid {
+    width: 800px;
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    }
+
+    .grid section {
+        width: 400px;
+        height: 250px;
+    }
+
+    .container {
+        display:flex;
+        justify-content: center;
+        margin-top: -300px;
+    
+    }
+
+    .card-container {
+        display:flex;
+    }
+
+    .frame {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .heading-card {
+        position: relative;
+        left: 20px;
+        top: -100px;
+        z-index: 0;
+    }
+
+    .heading-card-2 {
+        position:relative;
+        top: 330px;
+        left: -500px;
+    }
+    
+
+    
+
+    
+}
