@@ -1,0 +1,33 @@
+.frame {
+    background-color: orange;
+    margin-top: 100px;
+    max-width: 400px;
+}
+
+.container {
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+
+.frame h1 {
+    font-family: "Roboto Condensed";
+    position:relative;
+    top: -60px;
+}
+
+body {
+    align-items: center;
+}
+
+body p {
+    font-family: "Roboto Condensed";
+    padding: 20px;
+    position: relative;
+    top: -30px;
+}
+
+footer p{
+    margin-top: 40px;
+    text-align: center;
+}
