@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+body {
+    text-align: center;
+}
+
+div {
+    height: 280px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 90px;
+    background-color: orange;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top:40px;
+}
+
+h2 {
+    padding-top:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+blockquote {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+
+
+        <h1>You answered:</h1>
+        <blockquote class="yourAnswer">The Quick Brown Fox Jumped Over The Lazy Dog</blockquote>
+
+        <h2>The Correct Answer is:</h2>
+        <p class="correctAnswer">The Quick Brown Fox Jumped Over The Lazy Dog </p>
+
+</div>
+
+<script>
+
+// Possible questions and answers
+const questions = {
+            "Work today...": "eat tomorrow",
+            "United we stand...": "divided we fall",
+            "Slow and steady...": "wins the race"
+        };
+
+        // Select a random question
+        const questionKeys = Object.keys(questions);
+        const randomQuestion = questionKeys[Math.floor(Math.random() * questionKeys.length)];
+        const correctAnswer = questions[randomQuestion];
+
+        // Prompt user for their answer
+        const userAnswer = prompt(randomQuestion);
+
+        // Update the HTML with user response and correct answer
+        document.querySelector(".yourAnswer").textContent = randomQuestion + " " + (userAnswer ? userAnswer : "(No answer given)");
+        document.querySelector(".correctAnswer").textContent = randomQuestion + " " + correctAnswer;
+
+</script>
+   
+
+    
+</body>
+</html>
