@@ -1,14 +1,33 @@
-div {
+.header {
     width: 100%;
     background-color: #ec9720;
     height: 200px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    background-image: url(images/background-1.svg);
+    background-image: url(images/pattern02.svg);
+    background-repeat: repeat;
+    background-position: center; 
+    z-index: 2;
+    position: fixed;
+
+    
+    
+
+}
+
+.footer {
+    width: 100%;
+    background-color: #ec9720;
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    background-image: url(images/pattern02.svg);
     background-repeat: repeat;
     background-position: center; 
     position: relative;
+    margin-top: -4px;
 
     
     
@@ -21,12 +40,14 @@ h1 {
     font-size: 20px;
 }
 
-div p {
+.header p {
     color: white;
     font-family: arial;
+    font-weight: 600;
     padding-right: 50px;
     display: block;
-    font-size: 1.4em;
+    font-size: 5em;
+    
 
     
 }
@@ -54,28 +75,160 @@ body {
     margin-right: auto;
     margin-left: auto;
     display: inline-block;
+    margin-top: 200px;
+    z-index: 1;
+    position: relative;
 
 }
 
 .card-1{
 
-    width: 360px;
-    height: 100px;
-    background-color: black;
-    border-radius:20px;
-    margin: 20px;
+    width: 760px;
+    height: 50px;
+   /*  background-color: aquamarine; */
+    border-radius:0px;
+    margin-right: 20px;
+    margin-left: 20px;
     position: relative;
     float: left;
+    border-bottom: 0.25rem solid;
     
 }
 
 .card-2{
 
-    width: 360px;
-    height: 100px;
+    width: 760px;
+    height: 50px;
+/*     background-color: yellow; */
+    border-radius:0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+    border-bottom: 0.25rem solid;
+ 
+}
+
+.card-3{
+
+    width: 760px;
+    height: 50px;
+   /*  background-color: red; */
+    border-radius:0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+    border-bottom: 0.25rem solid;
+ 
+}
+
+.card-4{
+
+    width: 760px;
+    height: 50px;
+    /* background-color: orange; */
+    border-radius:0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+    border-bottom: 0.25rem solid;
+ 
+}
+
+.card-5{
+
+    width: 760px;
+    height: 50px;
+   /*  background-color: lightpink; */
+    border-radius:0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+    border-bottom: 0.25rem solid;
+ 
+}
+
+.card-6{
+
+    width: 760px;
+    height: 50px;
+    /* background-color: violet; */
+    border-radius:0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+    border-bottom: 0.25rem solid;
+ 
+}
+
+.card-7{
+
+    width: 760px;
+    height: 50px;
+    /* background-color: white; */
+    border-radius:0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+    border-bottom: 0.25rem solid;
+ 
+}
+
+.card-8{
+
+    width: 760px;
+    height: 50px;
+/*     background-color: greenyellow; */
+    border-radius:0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+    border-bottom: 0.25rem solid;
+ 
+}
+
+.card-9{
+
+    width: 760px;
+    height: 50px;
+/*     background-color: greenyellow; */
+    border-radius:0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+    border-bottom: 0.25rem solid;
+ 
+}
+
+.card-10{
+
+    width: 760px;
+    height: 50px;
+/*     background-color: greenyellow; */
+    border-radius:0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+    border-bottom: 0.25rem solid;
+ 
+}
+
+.submit{
+
+    width: 760px;
+    height: 50px;
     background-color: black;
-    border-radius:20px;
-    margin: 20px;
+    border-radius:0px;
+    margin-right: 20px;
+    margin-left: 20px;
     position: relative;
     float: left;
  
@@ -83,6 +236,127 @@ body {
 
 
 
+
+
+.title {
+
+    max-height: 40px;
+    position: relative;
+    float: left;
+    padding-left: 20px;
+    font-family: arial;
+}
+
+
+.submit-text {
+
+    max-height: 40px;
+    position: relative;
+    float: right;
+    padding-right: 20px;
+    font-family: arial;
+    color: antiquewhite;
+
+}
+
+.submit-text:hover {
+
+    color: black;
+   
+}
+
+.submit:hover {
+
+    background-color: white;
+   
+}
+
+#card-hover:hover {
+
+    background-color:white;
+    transition: all .2s;
+}
+
+#overlay {
+
+    position: fixed; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  text-align: center;
+
+}
+
+
+.window {
+
+    width: 550px;
+    height: 650px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    z-index: 0;
+    position: relative;
+    text-align: center;
+}
+
+.bar {
+    width: 500px;
+    height: 40px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.bar p {
+
+    font-family: arial;
+    font-size: 20px;
+}
+
+#space1{
+    height: 100px;
+}
+
+.close {
+    position: relative;
+    height: 50px;
+    height: 50px;
+    float: left;
+    padding:25px;
+
+
+}
+
+
+.close img {
+
+    height: 50px;
+    height: 50px;
+   
+}
+
+.window h1 {
+    font-family: arial;
+    font-size: 50px;
+}
+
+#bar6 {
+
+    text-wrap: wrap;
+   overflow-wrap: normal;
+}
+
+#bar6 p{
+    text-wrap: nowrap;
+}
 
 
 
