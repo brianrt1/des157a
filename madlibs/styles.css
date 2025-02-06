@@ -83,7 +83,7 @@ article input {
     background-image: url(images/pattern02.svg);
     background-repeat: repeat;
     background-position: center; 
-    z-index: 2;
+    z-index: 11;
     position: fixed;
 
     
