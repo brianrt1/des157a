@@ -1,3 +1,78 @@
+/* EQ Meter Container */
+.eq-meter {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    gap: 5px;
+    right: 15px;
+    bottom:10px;
+    z-index: 1;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+
+.bar {
+    max-width: 2px;
+    background-color: white;
+    animation: bounce 4s infinite ease-in-out alternate;
+}
+
+
+.bar:nth-child(1) { animation-delay: .4s; }
+.bar:nth-child(2) { animation-delay: .32s; }
+.bar:nth-child(3) { animation-delay: .23s; }
+.bar:nth-child(4) { animation-delay: 0.12s; }
+.bar:nth-child(5) { animation-delay: .13s; }
+
+
+@keyframes bounce {
+    0%   { height: 0px; }
+    50%  { height: 60px; }
+    70%  { height: 40px; }
+    50%  { height: 20px; }
+    100% { height: 0px; }
+}
+
+/* RULES */
+
+article label {
+
+    position: relative;
+    right: 285px;
+    top: 14px;
+    max-height: 40px;
+    font-family: arial;
+    opacity: 0%;
+    font-size: 20px;
+    font-family: arial;
+    
+}
+
+article input {
+    position: relative;
+    right: 160px;
+    top: 13px;
+    width: 400px;
+    opacity: 100%;
+    /* background-color: palegoldenrod; */
+    border: none;
+    font-family: arial;
+    background-color: transparent !important;
+    font-size: 20px;
+    
+}
+
+/* input[type=text]:focus {
+    background-color: white;
+} */
+
 .header {
     width: 100%;
     background-color: #ec9720;
@@ -41,8 +116,8 @@ h1 {
 }
 
 .header p {
-    color: white;
-    font-family: arial;
+    color: yellow;
+    font-family: "Righteous", serif;
     font-weight: 600;
     padding-right: 50px;
     display: block;
@@ -53,8 +128,8 @@ h1 {
 }
 
 div img {
-    height: 40px;
-    width: 40px;
+    height: 80px;
+    width: 80px;
     padding: 20px;
     position: relative;
   
@@ -69,15 +144,16 @@ body {
 .main-card{
 
     height:700px;
-    background-color:antiquewhite;
+    background-color: white;
     max-width:800px;
     width:800px;
     margin-right: auto;
     margin-left: auto;
     display: inline-block;
     margin-top: 200px;
-    z-index: 1;
+    z-index: 10;
     position: relative;
+
 
 }
 
@@ -86,12 +162,13 @@ body {
     width: 760px;
     height: 50px;
    /*  background-color: aquamarine; */
+   background-color: palegoldenrod;
     border-radius:0px;
     margin-right: 20px;
     margin-left: 20px;
     position: relative;
     float: left;
-    border-bottom: 0.25rem solid;
+    border-bottom: 0.2rem solid;
     
 }
 
@@ -100,12 +177,13 @@ body {
     width: 760px;
     height: 50px;
 /*     background-color: yellow; */
+background-color: palegreen;
     border-radius:0px;
     margin-right: 20px;
     margin-left: 20px;
     position: relative;
     float: left;
-    border-bottom: 0.25rem solid;
+    border-bottom: 0.2rem solid;
  
 }
 
@@ -114,12 +192,13 @@ body {
     width: 760px;
     height: 50px;
    /*  background-color: red; */
+   background-color: palevioletred;
     border-radius:0px;
     margin-right: 20px;
     margin-left: 20px;
     position: relative;
     float: left;
-    border-bottom: 0.25rem solid;
+    border-bottom: 0.2rem solid;
  
 }
 
@@ -128,12 +207,13 @@ body {
     width: 760px;
     height: 50px;
     /* background-color: orange; */
+    background-color: paleturquoise;
     border-radius:0px;
     margin-right: 20px;
     margin-left: 20px;
     position: relative;
     float: left;
-    border-bottom: 0.25rem solid;
+    border-bottom: 0.2rem solid;
  
 }
 
@@ -142,12 +222,13 @@ body {
     width: 760px;
     height: 50px;
    /*  background-color: lightpink; */
+   background-color: lightcoral;
     border-radius:0px;
     margin-right: 20px;
     margin-left: 20px;
     position: relative;
     float: left;
-    border-bottom: 0.25rem solid;
+    border-bottom: 0.2rem solid;
  
 }
 
@@ -156,12 +237,13 @@ body {
     width: 760px;
     height: 50px;
     /* background-color: violet; */
+    background-color: lightseagreen;
     border-radius:0px;
     margin-right: 20px;
     margin-left: 20px;
     position: relative;
     float: left;
-    border-bottom: 0.25rem solid;
+    border-bottom: 0.2rem solid;
  
 }
 
@@ -170,12 +252,13 @@ body {
     width: 760px;
     height: 50px;
     /* background-color: white; */
+    background-color: lightskyblue;
     border-radius:0px;
     margin-right: 20px;
     margin-left: 20px;
     position: relative;
     float: left;
-    border-bottom: 0.25rem solid;
+    border-bottom: 0.2rem solid;
  
 }
 
@@ -183,13 +266,14 @@ body {
 
     width: 760px;
     height: 50px;
+    background-color: palegoldenrod;
 /*     background-color: greenyellow; */
     border-radius:0px;
     margin-right: 20px;
     margin-left: 20px;
     position: relative;
     float: left;
-    border-bottom: 0.25rem solid;
+    border-bottom: 0.2rem solid;
  
 }
 
@@ -197,13 +281,14 @@ body {
 
     width: 760px;
     height: 50px;
+    background-color: palegreen;
 /*     background-color: greenyellow; */
     border-radius:0px;
     margin-right: 20px;
     margin-left: 20px;
     position: relative;
     float: left;
-    border-bottom: 0.25rem solid;
+    border-bottom: 0.2rem solid;
  
 }
 
@@ -211,13 +296,14 @@ body {
 
     width: 760px;
     height: 50px;
+    background-color: palevioletred;
 /*     background-color: greenyellow; */
     border-radius:0px;
     margin-right: 20px;
     margin-left: 20px;
     position: relative;
     float: left;
-    border-bottom: 0.25rem solid;
+    border-bottom: 0.2rem solid;
  
 }
 
@@ -227,7 +313,6 @@ body {
     height: 50px;
     background-color: black;
     border-radius:0px;
-    margin-right: 20px;
     margin-left: 20px;
     position: relative;
     float: left;
@@ -255,32 +340,32 @@ body {
     float: right;
     padding-right: 20px;
     font-family: arial;
-    color: antiquewhite;
+    color: white;
 
 }
 
-.submit-text:hover {
-
+.submit:hover .submit-text {
     color: black;
-   
+    transition: all 0.2s;
 }
 
 .submit:hover {
 
     background-color: white;
-   
+    transition: all .2s;
+    cursor: pointer;
 }
 
 #card-hover:hover {
 
     background-color:white;
     transition: all .2s;
-}
+} 
 
 #overlay {
 
     position: fixed; /* Sit on top of the page content */
-  display: block; /* Hidden by default */
+  display: none; /* Hidden by default */
   width: 100%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
   top: 0;
@@ -306,6 +391,7 @@ body {
     z-index: 0;
     position: relative;
     text-align: center;
+    cursor: default;
 }
 
 .bar {
@@ -343,9 +429,22 @@ body {
    
 }
 
+.close:hover {
+
+    cursor: pointer;
+}
+
 .window h1 {
-    font-family: arial;
-    font-size: 50px;
+    color: black;
+    font-family: "Righteous", serif;
+    font-weight: 600;
+    display: block;
+    font-size: 5em;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    
+
+    
 }
 
 #bar6 {
@@ -358,6 +457,22 @@ body {
     text-wrap: nowrap;
 }
 
+.card-9 input{
+
+ right: 125px;
+
+}
+
+.submit-btn {
+    background: none;
+    width: 760px;
+    border: none;
+    cursor: pointer;
+}
+
+.m-bar p {
+    font-family: arial;
+}
 
 
 
