@@ -31,7 +31,7 @@
 
     <section class="main-card" >
         <form>
-        <article class="card-1" id="card-hover">
+        <article class="card-1 card-hover">
             
             <h1 class="title">noun:</h1>
             <label for="noun1">noun:</label>
@@ -40,55 +40,55 @@
         </article>
             
 
-        <article class="card-2" id="card-hover">
+        <article class="card-2 card-hover">
             <h1 class="title">place:</h1>
             <label for="place1">place:</label>
             <input type="text" id="place1" name="place1">
 
         </article>
-        <article class="card-3" id="card-hover">
-            <h1 class="title">noun:</h1>
-            <label for="place1">noun:</label>
-            <input type="text" id="place1" name="place1">
-        </article>
-        <article class="card-4" id="card-hover">
-            <h1 class="title">verb:</h1>
-            <label for="verb1">verb:</label>
-            <input type="text" id="verb1" name="verb1">
-        </article>
-        <article class="card-5" id="card-hover">
-            <h1 class="title">area:</h1>
-            <label for="area1">area:</label>
-            <input type="text" id="area1" name="area1">
-        </article>
-        <article class="card-6" id="card-hover">
-            <h1 class="title">place:</h1>
-            <label for="place2">place:</label>
-            <input type="text" id="place2" name="place2">
-        </article>
-        <article class="card-7" id="card-hover">
+        <article class="card-3 card-hover">
             <h1 class="title">noun:</h1>
             <label for="noun2">noun:</label>
             <input type="text" id="noun2" name="noun2">
         </article>
-        <article class="card-8" id="card-hover">
+        <article class="card-4 card-hover">
+            <h1 class="title">verb:</h1>
+            <label for="verb1">verb:</label>
+            <input type="text" id="verb1" name="verb1">
+        </article>
+        <article class="card-5 card-hover">
+            <h1 class="title">area:</h1>
+            <label for="area1">area:</label>
+            <input type="text" id="area1" name="area1">
+        </article>
+        <article class="card-6 card-hover">
+            <h1 class="title">place:</h1>
+            <label for="place2">place:</label>
+            <input type="text" id="place2" name="place2">
+        </article>
+        <article class="card-7 card-hover">
+            <h1 class="title">noun:</h1>
+            <label for="noun3">noun:</label>
+            <input type="text" id="noun3" name="noun3">
+        </article>
+        <article class="card-8 card-hover">
             <h1 class="title">verb:</h1>
             <label for="verb2">verb:</label>
             <input type="text" id="verb2" name="verb2">
         </article>
-        <article class="card-9" id="card-hover">
+        <article class="card-9 card-hover">
             <h1 class="title">noun (plural):</h1>
-            <label for="noun3">noun:</label>
-            <input type="text" id="noun3" name="noun3">
+            <label for="noun4">noun:</label>
+            <input type="text" id="noun4" name="noun4">
         </article>
-        <article class="card-10" id="card-hover">
+        <article class="card-10 card-hover">
             <h1 class="title">verb:</h1>
             <label for="verb3">verb:</label>
             <input type="text" id="verb3" name="verb3">
             </article>
-         <article class="submit" id="card-hover-2">
+         <article class="submit card-hover-2">
                 <button type="button" class="submit-btn">
-                <h1 class="submit-text">Submit</h1>
+                <p class="submit-text">Submit</p>
                 </button>
         </article>
             
@@ -100,7 +100,7 @@
         <article id="overlay">
             <article class="window">
                 <div class="close">
-                    <img src = "images/close-1.svg">
+                    <img src = "images/close-1.svg" alt = "close-button">
                 </div>
                 <div id="space1"></div>
                 <h1>It's a hit!</h1>
@@ -118,7 +118,7 @@
                     <p>♫&nbsp;<p>Just wanna...&nbsp;<p id="lib4">[verb]&nbsp;</p><p>&nbsp;in the&nbsp;</p><p id="lib5">[area]</p><p>&nbsp;♫</p>
                 </div>
                 <div class="m-bar" id="bar5">
-                    <p>♫&nbsp;<p>Just like&nbsp;<p id="lib6">[place]</p></p><p>&nbsp;♫</p>
+                    <p>♫&nbsp;<p>Just like&nbsp;<p id="lib6">[place]</p><p>&nbsp;♫</p>
                 </div>
                 <div class="m-bar" id="bar6">
                     <p>♫&nbsp;</p><p>Oh my,&nbsp;</p><p id="lib7">[noun]</p><p>&nbsp;dont...&nbsp;</p><p id="lib8">[verb]</p><p>&nbsp;</p><p id="lib9">[noun (plural)]</p><p>&nbsp;but they do&nbsp;</p><p id="lib10">[verb]</p><p>&nbsp;♫</p>
@@ -134,7 +134,7 @@
 
         
 
-        </article>
+      
     </section>
 
 
@@ -149,9 +149,8 @@
         
     </div>
 
-    <script>
-
-window.onload = function () {
+   <script>
+    window.onload = function () {
     const submitButton = document.querySelector(".submit-btn");
     const overlay = document.getElementById("overlay");
     const closeButton = document.querySelector(".close img");
@@ -161,13 +160,8 @@ window.onload = function () {
         return;
     }
 
-   
-    function lowercaseFirstLetter(str) {
-        return str.charAt(0).toLowerCase() + str.slice(1);
-    }
-
     submitButton.addEventListener("click", function () {
-        let inputs = ["noun1", "place1", "noun2", "verb1", "area1", "place2", "noun2", "verb2", "noun3", "verb3"];
+        let inputs = ["noun1", "place1", "noun2", "verb1", "area1", "place2", "noun3", "verb2", "noun4", "verb3"];
         
         let missingFields = inputs.some(id => {
             let inputField = document.getElementById(id);
@@ -179,19 +173,17 @@ window.onload = function () {
             return;
         }
 
-        
-        document.getElementById("lib1").textContent = lowercaseFirstLetter(document.getElementById("noun1").value);
-        document.getElementById("lib2").textContent = lowercaseFirstLetter(document.getElementById("place1").value);
-        document.getElementById("lib3").textContent = lowercaseFirstLetter(document.getElementById("noun2").value);
-        document.getElementById("lib4").textContent = lowercaseFirstLetter(document.getElementById("verb1").value);
-        document.getElementById("lib5").textContent = lowercaseFirstLetter(document.getElementById("area1").value);
-        document.getElementById("lib6").textContent = lowercaseFirstLetter(document.getElementById("place2").value);
-        document.getElementById("lib7").textContent = lowercaseFirstLetter(document.getElementById("noun2").value);
-        document.getElementById("lib8").textContent = lowercaseFirstLetter(document.getElementById("verb2").value);
-        document.getElementById("lib9").textContent = lowercaseFirstLetter(document.getElementById("noun3").value);
-        document.getElementById("lib10").textContent = lowercaseFirstLetter(document.getElementById("verb3").value);
+        document.getElementById("lib1").textContent = document.getElementById("noun1").value;
+        document.getElementById("lib2").textContent = document.getElementById("place1").value;
+        document.getElementById("lib3").textContent = document.getElementById("noun2").value;
+        document.getElementById("lib4").textContent = document.getElementById("verb1").value;
+        document.getElementById("lib5").textContent = document.getElementById("area1").value;
+        document.getElementById("lib6").textContent = document.getElementById("place2").value;
+        document.getElementById("lib7").textContent = document.getElementById("noun3").value;
+        document.getElementById("lib8").textContent = document.getElementById("verb2").value;
+        document.getElementById("lib9").textContent = document.getElementById("noun4").value;
+        document.getElementById("lib10").textContent = document.getElementById("verb3").value;
 
-       
         overlay.style.display = "block";
     });
 
@@ -200,7 +192,7 @@ window.onload = function () {
     });
 };
 
-            </script>
+   </script>
     
 </body>
 </html>
