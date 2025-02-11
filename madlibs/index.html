@@ -23,9 +23,11 @@
             <div class="bar"></div>
         </div>
         
-        <p>SONG MAD LIB</p>
+        <p>SONG MAD-LIB</p>
         
     </div>
+
+  
 
     <section class="main-card" >
         <form>
@@ -84,7 +86,7 @@
             <label for="verb3">verb:</label>
             <input type="text" id="verb3" name="verb3">
             </article>
-         <article class="submit" id="card-hover">
+         <article class="submit" id="card-hover-2">
                 <button type="button" class="submit-btn">
                 <h1 class="submit-text">Submit</h1>
                 </button>
@@ -92,6 +94,8 @@
             
 
         </form>
+
+       
 
         <article id="overlay">
             <article class="window">
@@ -124,17 +128,29 @@
                 <div class="m-bar" id="bar9"></div>
                 <div class="m-bar" id="bar1-"></div>
             </article>
+
+            
+        </article>
+
+        
+
         </article>
     </section>
 
 
     <div class="footer">
+
+        
+        <section>
+        <p>MADE BY BRIAN RODRIGUEZ-TORRES // DES 157A - WINTER 2025</p>
+        <p><a href="/index.html">portal page</a></p>
+        </section>
      
         
     </div>
 
     <script>
-   // Ensure JavaScript runs after the elements are loaded
+
 window.onload = function () {
     const submitButton = document.querySelector(".submit-btn");
     const overlay = document.getElementById("overlay");
@@ -145,7 +161,7 @@ window.onload = function () {
         return;
     }
 
-    // Function to convert first letter to lowercase
+   
     function lowercaseFirstLetter(str) {
         return str.charAt(0).toLowerCase() + str.slice(1);
     }
@@ -163,7 +179,7 @@ window.onload = function () {
             return;
         }
 
-        // Insert lowercase values into the overlay
+        
         document.getElementById("lib1").textContent = lowercaseFirstLetter(document.getElementById("noun1").value);
         document.getElementById("lib2").textContent = lowercaseFirstLetter(document.getElementById("place1").value);
         document.getElementById("lib3").textContent = lowercaseFirstLetter(document.getElementById("noun2").value);
@@ -175,7 +191,7 @@ window.onload = function () {
         document.getElementById("lib9").textContent = lowercaseFirstLetter(document.getElementById("noun3").value);
         document.getElementById("lib10").textContent = lowercaseFirstLetter(document.getElementById("verb3").value);
 
-        // Show the overlay
+       
         overlay.style.display = "block";
     });
 

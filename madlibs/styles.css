@@ -10,6 +10,8 @@
     right: 15px;
     bottom:10px;
     z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 input:focus {
@@ -57,9 +59,9 @@ article label {
 
 article input {
     position: relative;
-    right: 160px;
-    top: 13px;
-    width: 400px;
+    right: 80px;
+    top: 12px;
+    width: 100px;
     opacity: 100%;
     /* background-color: palegoldenrod; */
     border: none;
@@ -109,6 +111,12 @@ article input {
 
 }
 
+.footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: yellow;
+}
+
 h1 {
 
     
@@ -121,7 +129,8 @@ h1 {
     font-weight: 600;
     padding-right: 50px;
     display: block;
-    font-size: 5em;
+    font-size: 3em;
+    margin-top: 0px;
     
 
     
@@ -146,7 +155,7 @@ body {
     height:700px;
     background-color: white;
     max-width:800px;
-    width:800px;
+    width:340px;
     margin-right: auto;
     margin-left: auto;
     display: inline-block;
@@ -159,7 +168,7 @@ body {
 
 .card-1{
 
-    width: 760px;
+    width: 300px;
     height: 50px;
    /*  background-color: aquamarine; */
    background-color: palegoldenrod;
@@ -172,9 +181,10 @@ body {
     
 }
 
+
 .card-2{
 
-    width: 760px;
+    width: 300px;
     height: 50px;
 /*     background-color: yellow; */
 background-color: palegreen;
@@ -189,7 +199,7 @@ background-color: palegreen;
 
 .card-3{
 
-    width: 760px;
+    width: 300px;
     height: 50px;
    /*  background-color: red; */
    background-color: palevioletred;
@@ -204,7 +214,7 @@ background-color: palegreen;
 
 .card-4{
 
-    width: 760px;
+    width: 300px;
     height: 50px;
     /* background-color: orange; */
     background-color: paleturquoise;
@@ -219,7 +229,7 @@ background-color: palegreen;
 
 .card-5{
 
-    width: 760px;
+    width: 300px;
     height: 50px;
    /*  background-color: lightpink; */
    background-color: lightcoral;
@@ -234,7 +244,7 @@ background-color: palegreen;
 
 .card-6{
 
-    width: 760px;
+    width: 300px;
     height: 50px;
     /* background-color: violet; */
     background-color: lightseagreen;
@@ -249,7 +259,7 @@ background-color: palegreen;
 
 .card-7{
 
-    width: 760px;
+    width: 300px;
     height: 50px;
     /* background-color: white; */
     background-color: lightskyblue;
@@ -264,7 +274,7 @@ background-color: palegreen;
 
 .card-8{
 
-    width: 760px;
+    width: 300px;
     height: 50px;
     background-color: palegoldenrod;
 /*     background-color: greenyellow; */
@@ -279,7 +289,7 @@ background-color: palegreen;
 
 .card-9{
 
-    width: 760px;
+    width: 300px;
     height: 50px;
     background-color: palegreen;
 /*     background-color: greenyellow; */
@@ -294,7 +304,7 @@ background-color: palegreen;
 
 .card-10{
 
-    width: 760px;
+    width: 300px;
     height: 50px;
     background-color: palevioletred;
 /*     background-color: greenyellow; */
@@ -309,7 +319,7 @@ background-color: palegreen;
 
 .submit{
 
-    width: 760px;
+    width: 300px;
     height: 50px;
     background-color: black;
     border-radius:0px;
@@ -318,6 +328,7 @@ background-color: palegreen;
     float: left;
  
 }
+
 
 
 
@@ -360,24 +371,36 @@ background-color: palegreen;
 
     background-color:white;
     transition: all .2s;
+    height: 60px;
+    
+} 
+
+#card-hover-2:hover {
+
+    background-color:white;
+    transition: all .2s;
+   
+    
 } 
 
 #overlay {
 
-    position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
   text-align: center;
 
 }
+
+
 
 
 .window {
@@ -465,7 +488,7 @@ background-color: palegreen;
 
 .submit-btn {
     background: none;
-    width: 760px;
+    width: 300px;
     border: none;
     cursor: pointer;
 }
@@ -476,10 +499,40 @@ background-color: palegreen;
 
 
 
+#overlay-2 {
+
+    position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: -200px;
+      left: 0px;
+     
+      bottom: 0;
+      background-color: rgba(0,0,0,0);
+      z-index: 15;
+      cursor: default;
+      text-align: center;
+    
+}
+
+.footer section {
+
+    padding-top: 50px;
+}
+
+
+
 
 
 
 @media screen and (min-width: 480px) {
+
+    .eq-meter {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
     body {
         background-color: rgb(250, 247, 241);  
     }
@@ -494,6 +547,72 @@ background-color: palegreen;
 
     img {
 
+    }
+
+    .header p {
+
+        font-size: 5em;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .card-1{
+        width: 760px;
+    }
+    .card-2{
+        width: 760px;
+    }
+    .card-3{
+        width: 760px;
+    }
+    .card-4{
+        width: 760px;
+    }
+    .card-5{
+        width: 760px;
+    }
+    .card-6{
+        width: 760px;
+    }
+    .card-7{
+        width: 760px;
+    }
+    .card-8{
+        width: 760px;
+    }
+    .card-9{
+        width: 760px;
+    }
+    .card-10{
+        width: 760px;
+    }
+
+    .main-card{
+        width: 800px;
+    }
+
+    article input{
+
+     right: 160px;
+     top: 13px;
+     width: 400px;
+
+    }
+
+    .submit-btn {
+       
+        width: 760px;
+       
+    }
+
+    .submit {
+
+        width: 760px;
+    }
+
+    .footer section {
+
+        padding-top: 0px;
     }
 
     
