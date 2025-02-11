@@ -1,7 +1,16 @@
+.frame-J3 {
+    background-color: orange;
+    margin-top: 100px;
+    max-width: 500px;
+    max-height: 750px;
+    gap: 20px
+}
+
+
 .frame {
     background-color: orange;
     margin-top: 100px;
-    max-width: 400px;
+    max-width: 500px;
     max-height: 750px;
     gap: 20px
 }
@@ -9,7 +18,7 @@
 .frame-2 {
     background-color: orange;
     margin-top: 100px;
-    max-width: 400px;
+    max-width: 500px;
     max-height: 750px;
 
 }
@@ -18,14 +27,14 @@
     display: flex;
     width:100%;
     justify-content: center;
-    height: 2000px;
+    height: 3000px;
     flex-wrap: wrap;
-    max-width: 400px;
+    max-width: 500px;
     margin-right: auto;
     margin-left: auto;
 }
 
-.frame h1, .frame-2 h1 {
+.frame h1, .frame-2 h1, .frame-J3 h1{
     font-family: "Roboto Condensed";
     position:relative;
     top: -60px;
