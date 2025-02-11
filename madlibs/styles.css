@@ -289,7 +289,7 @@ background-color: palegreen;
 
 .card-9{
 
-    width: 300px;
+    width: 340px;
     height: 50px;
     background-color: palegreen;
 /*     background-color: greenyellow; */
@@ -405,7 +405,7 @@ position: fixed;
 
 .window {
 
-    width: 550px;
+    width: 380px;
     height: 650px;
     background-color: white;
     margin-right: auto;
@@ -482,7 +482,9 @@ position: fixed;
 
 .card-9 input{
 
- right: 125px;
+ right: 40px;
+ top: 12px;
+ 
 
 }
 
@@ -520,6 +522,7 @@ position: fixed;
 
     padding-top: 50px;
 }
+
 
 
 
@@ -614,6 +617,18 @@ position: fixed;
     .footer section {
 
         padding-top: 0px;
+    }
+
+    .card-9 input{
+
+        right: 125px;
+        top: 0px;
+        
+       
+       }
+
+    .window{
+    width:550px
     }
 
     
