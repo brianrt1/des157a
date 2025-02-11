@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #54361b;
+      }
+
+      .cls-2 {
+        fill: #382f1e;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.2, SVG Export Plug-In . SVG Version: 1.2.0 Build 154)  -->
+  <g>
+    <g id="Layer_2">
+      <rect class="cls-1" x="250" y="250" width="250" height="250" transform="translate(750 750) rotate(180)"/>
+      <rect class="cls-1" x="0" y="250" width="250" height="250" transform="translate(500 250) rotate(90)"/>
+      <rect class="cls-1" x="0" y="0" width="250" height="250"/>
+      <rect class="cls-1" x="250" y="0" width="250" height="250" transform="translate(250 500) rotate(-90)"/>
+    </g>
+    <g id="Layer_1">
+      <path class="cls-2" d="M250,250h250c0,69-56,125-125,125-69,0-125-56-125-125Z"/>
+      <path class="cls-2" d="M250,250V0C319,0,375,56,375,125s-56,125-125,125Z"/>
+      <path class="cls-2" d="M500,0v250c-69,0-125-56-125-125C375,56,431,0,500,0Z"/>
+      <path class="cls-2" d="M0,500v-250c69,0,125,56,125,125S69,500,0,500Z"/>
+      <path class="cls-2" d="M125,500v-250c69,0,125,56,125,125,0,69-56,125-125,125Z"/>
+      <path class="cls-2" d="M250,375h250c0,69-56,125-125,125-69,0-125-56-125-125Z"/>
+      <path class="cls-2" d="M250,250H0c0-69,56-125,125-125,69,0,125,56,125,125Z"/>
+      <path class="cls-2" d="M250,125H0C0,56,56,0,125,0,194,0,250,56,250,125Z"/>
+    </g>
+  </g>
+</svg>
