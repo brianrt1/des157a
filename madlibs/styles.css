@@ -154,8 +154,8 @@ body {
 
     height:700px;
     background-color: white;
-    max-width:800px;
-    width:340px;
+    max-width:380px;
+    width:380px;
     margin-right: auto;
     margin-left: auto;
     display: inline-block;
@@ -168,7 +168,7 @@ body {
 
 .card-1{
 
-    width: 300px;
+    width: 340px;
     height: 50px;
    /*  background-color: aquamarine; */
    background-color: palegoldenrod;
@@ -184,7 +184,7 @@ body {
 
 .card-2{
 
-    width: 300px;
+    width: 340px;
     height: 50px;
 /*     background-color: yellow; */
 background-color: palegreen;
@@ -199,7 +199,7 @@ background-color: palegreen;
 
 .card-3{
 
-    width: 300px;
+    width: 340px;
     height: 50px;
    /*  background-color: red; */
    background-color: palevioletred;
@@ -214,7 +214,7 @@ background-color: palegreen;
 
 .card-4{
 
-    width: 300px;
+    width: 340px;
     height: 50px;
     /* background-color: orange; */
     background-color: paleturquoise;
@@ -229,7 +229,7 @@ background-color: palegreen;
 
 .card-5{
 
-    width: 300px;
+    width: 340px;
     height: 50px;
    /*  background-color: lightpink; */
    background-color: lightcoral;
@@ -244,7 +244,7 @@ background-color: palegreen;
 
 .card-6{
 
-    width: 300px;
+    width: 340px;
     height: 50px;
     /* background-color: violet; */
     background-color: lightseagreen;
@@ -259,7 +259,7 @@ background-color: palegreen;
 
 .card-7{
 
-    width: 300px;
+    width: 340px;
     height: 50px;
     /* background-color: white; */
     background-color: lightskyblue;
@@ -274,7 +274,7 @@ background-color: palegreen;
 
 .card-8{
 
-    width: 300px;
+    width: 340px;
     height: 50px;
     background-color: palegoldenrod;
 /*     background-color: greenyellow; */
@@ -304,7 +304,7 @@ background-color: palegreen;
 
 .card-10{
 
-    width: 300px;
+    width: 340px;
     height: 50px;
     background-color: palevioletred;
 /*     background-color: greenyellow; */
@@ -319,7 +319,7 @@ background-color: palegreen;
 
 .submit{
 
-    width: 300px;
+    width: 340px;
     height: 50px;
     background-color: black;
     border-radius:0px;
@@ -488,7 +488,7 @@ position: fixed;
 
 .submit-btn {
     background: none;
-    width: 300px;
+    width: 340px;
     border: none;
     cursor: pointer;
 }
@@ -589,6 +589,7 @@ position: fixed;
 
     .main-card{
         width: 800px;
+        max-width:800px;
     }
 
     article input{
