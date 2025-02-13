@@ -1,3 +1,26 @@
+.frame-J4 img {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.frame-J4 figcaption {
+    
+    padding-top: 10px;
+    margin-left: 20px;
+
+}
+
+
+.frame-J4 {
+    background-color: orange;
+    margin-top: 100px;
+    max-width: 500px;
+    max-height: 2000px;
+    gap: 20px
+}
+
 .frame-J3 {
     background-color: orange;
     margin-top: 100px;
@@ -27,14 +50,14 @@
     display: flex;
     width:100%;
     justify-content: center;
-    height: 3000px;
+    height: 5000px;
     flex-wrap: wrap;
     max-width: 500px;
     margin-right: auto;
     margin-left: auto;
 }
 
-.frame h1, .frame-2 h1, .frame-J3 h1{
+.frame h1, .frame-2 h1, .frame-J3 h1, .frame-J4 h1{
     font-family: "Roboto Condensed";
     position:relative;
     top: -60px;
@@ -42,6 +65,8 @@
 
 body {
     align-items: center;
+   /*  background-image: url(images/IMG_0771_2.jpg); */
+    background-size: cover;
 }
 
 body p {
