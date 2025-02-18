@@ -1,0 +1,132 @@
+main {
+    text-align: center;
+}
+.window-main {
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    width: 1000px;
+    max-width: 1200px;
+    height: 900px;
+    max-height: 650px;
+    padding-top: 100px;
+    
+}
+
+.window-2{
+
+    flex: 2;
+
+    z-index: 5;
+}
+
+.window-3{
+    flex: 3;
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    background-color: aqua;
+    max-height: 900px;
+}
+
+.row-1 {
+background-color: blue;
+flex: 1;
+display: flex;
+max-height: 325px;
+}
+
+.row-2 {
+background-color: blueviolet;
+flex: 1;
+display: flex;
+max-height: 325px;
+
+}
+
+.box-1{
+    flex: 1;
+    background-color: blanchedalmond;
+   
+}
+
+.box-2{
+    flex: 1;
+    background-color: brown;
+}
+
+.box-3{
+    flex: 1;
+    background-color: black;
+    z-index: 4;
+}
+
+.box-4{
+    flex: 1;
+    background-color: yellow;
+}
+
+
+.box-main img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.box-2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.box-4 img {
+    height: 100%;
+    width: 100%;
+}
+
+.box-main {
+    height: 100%;
+    z-index: 5;
+}
+
+.card-title {
+    padding-left: 20px;
+    transform: rotate(0deg);
+
+    margin-top: 20px;
+    position: absolute;
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    font-family: arial;
+    z-index: 2;
+
+}
+
+.cover-img {
+    object-fit: cover;
+}
+
+#hover:hover {
+    scale: 1.2;
+    transition: all 2s;
+    z-index: 99;
+}
+
+
+
+#hover:hover .box-overlay{
+position: absolute;
+background-color: black;
+opacity: 50%;
+width: 100%;
+height: 100%;
+transition: all 2s;
+
+}
+
+
