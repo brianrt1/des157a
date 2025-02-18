@@ -73,6 +73,29 @@ max-height: 325px;
     object-fit: cover;
 }
 
+.box-main .cover-img-1 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cover-img-2 {
+
+    position: aboslute;
+}
+
+.cover-img-1 {
+    position: relative;
+
+}
+
+
+.cover-img-1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .box-1 img {
     height: 100%;
     width: 100%;
@@ -120,6 +143,8 @@ max-height: 325px;
 
 
 #hover:hover .box-overlay{
+top: 0;
+left: 0;
 position: absolute;
 background-color: black;
 opacity: 50%;

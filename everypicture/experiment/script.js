@@ -10,3 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
             text-decoration: underline;
         }`;
 });
+
+/* stack images
+
+fade animation on hover between images
+
+move based on mouse
+ */
