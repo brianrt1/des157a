@@ -55,30 +55,19 @@
     </article>
 
     <script>
-     document.addEventListener("DOMContentLoaded", function () {
-    var hoverElements = document.querySelectorAll("#hover");
-    
-    for (var i = 0; i < hoverElements.length; i++) {
-        hoverElements[i].addEventListener("mouseenter", function () {
-            if (this) {
-                this.style.cursor = "pointer";
-                var title = this.querySelector(".card-title");
-                if (title) {
-                    title.style.textDecoration = "underline";
-                }
-            }
-        });
-        
-        hoverElements[i].addEventListener("mouseleave", function () {
-            if (this) {
-                var title = this.querySelector(".card-title");
-                if (title) {
-                    title.style.textDecoration = "none";
-                }
-            }
-        });
-    }
+document.addEventListener("DOMContentLoaded", function () {
+    var styleElement = document.createElement("style");
+    styleElement.innerHTML = `
+        #hover:hover {
+            cursor: pointer;
+        }
+        #hover:hover .card-title {
+            text-decoration: underline;
+        }
+    `;
+    document.head.appendChild(styleElement);
 });
+
 
     </script>
     
