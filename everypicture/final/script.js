@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             overlay.style.display = 'none';
         }
 
+        // Replace forEach with simple for loop
         for (let i = 1; i <= 8; i++) {
             let img = document.getElementById('sec-' + i);
             if (img) {
@@ -74,11 +75,14 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     const sections = document.querySelectorAll('[id^="sec-"]');
-    sections.forEach(section => {
+    for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
         section.addEventListener('click', function() {
             // Hide all overlay cards first
-            document.querySelectorAll('.overlay-card, .overlay-card-2, .overlay-card-3, .overlay-card-4, .overlay-card-5, .overlay-card-6, .overlay-card-7, .overlay-card-8')
-                .forEach(card => card.style.display = 'none');
+            const allCards = document.querySelectorAll('.overlay-card, .overlay-card-2, .overlay-card-3, .overlay-card-4, .overlay-card-5, .overlay-card-6, .overlay-card-7, .overlay-card-8');
+            for (let j = 0; j < allCards.length; j++) {
+                allCards[j].style.display = 'none';
+            }
 
             // Get the correct overlay class from the mapping
             const targetOverlayClass = overlayMapping[section.id];
@@ -88,13 +92,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 targetOverlay.style.display = 'block';
             }
         });
-    });
+    }
 
     // Handle closing overlay cards
-    document.querySelectorAll('.overlay-card, .overlay-card-2, .overlay-card-3, .overlay-card-4, .overlay-card-5, .overlay-card-6, .overlay-card-7, .overlay-card-8')
-        .forEach(card => {
-            card.addEventListener('click', () => card.style.display = 'none');
-        });
+    const cards = document.querySelectorAll('.overlay-card, .overlay-card-2, .overlay-card-3, .overlay-card-4, .overlay-card-5, .overlay-card-6, .overlay-card-7, .overlay-card-8');
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].addEventListener('click', () => cards[i].style.display = 'none');
+    }
 
     // Image cycling on hover
     const hoverButton = document.getElementById("hover-button");
@@ -119,4 +123,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
