@@ -101,11 +101,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Image cycling on hover
-    const hoverButton = document.getElementById("hover-button");
+    const hoverButton = document.getElementByClass("hover-button");
     const images = [
-        document.getElementById("image01"),
-        document.getElementById("image02"),
-        document.getElementById("image03")
+        document.getElementByClass("image01"),
+        document.getElementByClass("image02"),
+        document.getElementByClass("image03")
     ];
     let currentIndex = 0;
 
