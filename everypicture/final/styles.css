@@ -730,3 +730,13 @@ article {
     display: block;
 }
 
+.topic-p {
+    z-index: 90;
+    position: absolute;
+    font-family: arial;
+    font-size: 60px;
+    top: 800px;
+    left: 100px;
+    font-style: bold;
+    color: white;
+}
