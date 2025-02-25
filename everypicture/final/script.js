@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             overlay.style.display = 'none';
         }
 
-        // Replace forEach with simple for loop
+    
         for (let i = 1; i <= 8; i++) {
             let img = document.getElementById('sec-' + i);
             if (img) {
