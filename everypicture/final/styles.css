@@ -435,6 +435,11 @@ article {
 }
 
 .arrow{
+
+    left: 20px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
    
  
 }
