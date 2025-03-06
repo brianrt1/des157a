@@ -57,6 +57,11 @@ article {
        }
 }
 
+.box-1:target .overlay-card {
+    display: block;
+
+}
+
 
 
 
@@ -444,7 +449,7 @@ article {
  
 }
 
-#arrow{
+#arrow-1{
 
     left: 20px;
     position: absolute;
@@ -453,8 +458,43 @@ article {
    
 }
 
-
 #arrow-2{
+
+    left: 20px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+   
+}
+
+#arrow-3{
+
+    left: 20px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+   
+}
+
+#arrow-4{
+
+    left: 20px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+   
+}
+
+#arrow-5{
+
+    left: 20px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+   
+}
+
+#arrow-6{
 
     right: 20px;
     position: absolute;
@@ -463,6 +503,32 @@ article {
    
 }
 
+#arrow-7{
+
+    left: 20px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+   
+}
+
+#arrow-8{
+
+    left: 20px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+   
+}
+
+#arrow-9{
+
+    left: 20px;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+   
+}
 
 
 .color-block {

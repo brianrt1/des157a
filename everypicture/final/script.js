@@ -1,5 +1,6 @@
 "use strict";
 
+
 window.addEventListener('scroll', function() {
     if (window.scrollY >= 1000) {
         document.querySelector('.taskbar').style.opacity = 0;
@@ -100,26 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
         cards[i].addEventListener('click', () => cards[i].style.display = 'none');
     }
 
-    // Image cycling on hover
-    const hoverButton = document.querySelectorAll("hover-button");
-    const images = [
-        document.querySelectorAll("image01"),
-        document.querySelectorAll("image02"),
-        document.querySelectorAll("image03")
-    ];
-    let currentIndex = 0;
-
-    if (images[0]) images[0].classList.remove("hidden");
-    if (images[1]) images[1].classList.add("hidden");
-    if (images[2]) images[2].classList.add("hidden");
-
-    if (hoverButton) {
-        hoverButton.addEventListener("mouseover", function () {
-            if (currentIndex < images.length - 1) {
-                images[currentIndex].classList.add("hidden");
-                currentIndex++;
-                images[currentIndex].classList.remove("hidden");
-            }
-        });
-    }
+   
 });
+

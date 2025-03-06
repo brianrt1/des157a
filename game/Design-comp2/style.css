@@ -1,0 +1,102 @@
+
+.overlay-1 {
+ display:block;
+ position: relative;
+ z-index:99;
+ width: 330px;
+ height: 250px;
+ bottom: 720px;
+ left: 700px;
+
+}
+
+.overlay-2 {
+    display:block;
+    position: relative;
+    z-index:99;
+    width: 120px;
+    height: 130px;
+    bottom: 645px;
+    left: 663px;
+}
+
+.overlay-3 {
+    display:block;
+    position: relative;
+    z-index:99;
+    width: 83px;
+    height: 405px;
+    bottom: 860px;
+    left: 50px;
+}
+
+
+#light-on {
+
+ height: 100%;
+ width: 100%;
+
+}
+
+#safe-open{
+    height: 100%;
+ width: 100%;
+
+}
+
+#door-open {
+
+    height: 100%;
+    width: 100%;
+   
+    
+
+}
+
+
+.window {
+    z-index: 0;
+
+    margin-top: 100px;
+
+    width: 1000px;
+    height: 714px;
+    max-width: 1000px;
+    max-height: 714px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+
+}
+
+.frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+#spash-1{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+
+}
+
+#spash-2{
+
+
+
+
+
+    display: none;
+
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+    
+}
