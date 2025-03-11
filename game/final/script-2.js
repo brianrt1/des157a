@@ -53,10 +53,17 @@ const doorActive = document.querySelector('.door-active');
 const overlay3 = document.querySelector('.overlay-3');
 
 
-doorActive.addEventListener('click', function() {
-    // Check if .overlay-2 is visible and .overlay-4 is not
-    if (getComputedStyle(overlay2).display === 'block' && getComputedStyle(overlay4).display === 'none') {
-        // Set the display of .overlay-3 to block
-        overlay3.style.display = 'block';
+doorActive.addEventListener('click', function(){
+    const overlays = [overlay2, overlay4];
+
+    let i = 0;
+    while (i< overlays.length) {
+        if (overlays [i] === overlay2 && overlays[i].style.display === 'block'
+        ) {
+            if (overlays[1].style.display === 'none') {
+                overlay3.style.display = 'block'
+            }
+        }
+        i++;
     }
 });
