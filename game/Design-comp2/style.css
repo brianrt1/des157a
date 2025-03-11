@@ -14,7 +14,7 @@
     display:block;
     position: relative;
     z-index:99;
-    width: 120px;
+    width: 135px;
     height: 130px;
     bottom: 645px;
     left: 663px;
@@ -28,6 +28,22 @@
     height: 405px;
     bottom: 860px;
     left: 50px;
+}
+
+.overlay-4 {
+    display:block;
+    position: relative;
+    z-index:99;
+    width: 50px;
+    height: 60px;
+    bottom: 1140px;
+    left: 715px;
+}
+
+#key-up {
+
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -90,13 +106,11 @@
 
 
 
-
-
-    display: none;
-
+    display: block;
+    position: relative;
     object-fit: cover;
-
     width: 100%;
     height: 100%;
+    bottom: 0px;
     
 }

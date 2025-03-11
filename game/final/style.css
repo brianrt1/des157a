@@ -1,0 +1,278 @@
+
+.overlay-1 {
+ display:none;
+ position: relative;
+ z-index:99;
+ width: 330px;
+ height: 250px;
+ bottom: 720px;
+ left: 700px;
+
+}
+
+.overlay-2 {
+    display:none;
+    position: absolute;
+    z-index:99;
+    width: 135px;
+    height: 130px;
+    bottom: 260px;
+    left: 663px;
+}
+
+.overlay-3 {
+    display:none;
+    position: absolute;
+    z-index:99;
+    width: 83px;
+    height: 405px;
+    bottom: 70px;
+    left: 50px;
+}
+
+/* .overlay-4:active {
+
+    display: none;
+
+} */
+
+.overlay-4:target {
+
+    display: none;
+
+}
+
+.overlay-4 {
+    display:none;
+    position: absolute;
+    z-index:99;
+    width: 50px;
+    height: 60px;
+    bottom: 290px;
+    left: 720px;
+}
+
+#key-up {
+
+    height: 100%;
+    width: 100%;
+}
+
+
+#light-on {
+
+ height: 100%;
+ width: 100%;
+
+}
+
+#safe-open{
+    height: 100%;
+ width: 100%;
+
+}
+
+#door-open {
+
+    height: 100%;
+    width: 100%;
+   
+    
+
+}
+
+
+.window {
+    z-index: 0;
+
+    margin-top: 100px;
+
+    width: 1000px;
+    height: 714px;
+    max-width: 1000px;
+    max-height: 714px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+
+}
+
+.frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+#splash-1{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+
+}
+
+#splash-2{
+
+
+
+    display: none;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    bottom: 719px;
+    z-index: 100;
+    
+}
+
+#splash-2 img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.keypad-btn {
+
+    position: relative;
+    height: 74px;
+    width: 74px;
+    background-color: aqua;
+    opacity: 0;
+}
+
+#btn-1 {
+    left: 320px;
+    bottom: 550px;
+}
+
+#btn-2 {
+    left: 440px;
+    bottom: 624px;
+}
+
+#btn-3 {
+    left: 563px;
+    bottom: 698px;
+}
+
+#btn-4 {
+    left: 320px;
+    bottom: 649px;
+}
+
+#btn-5 {
+    left: 440px;
+    bottom: 723px;
+}
+
+#btn-6 {
+    left: 563px;
+    bottom: 796px;
+}
+
+#btn-7 {
+    left: 320px;
+    bottom: 746px;
+}
+
+#btn-8 {
+    left: 440px;
+    bottom: 820px;
+}
+
+#btn-9 {
+    left: 563px;
+    bottom: 894px;
+}
+
+#btn-0 {
+    left: 440px;
+    bottom: 847px;
+}
+
+.keypad-btn:active {
+    background-color: black;
+}
+
+.back-btn {
+
+    position: relative;
+    height: 100px;
+    width: 100px;
+    bottom: 1150px;
+    left: 37px;
+    background-color: aquamarine;
+    opacity: 0;
+}
+
+.back-btn:active {
+    background-color: black;
+}
+
+.keypad-active {
+
+
+
+    position: absolute;
+
+
+    background-color: aqua;
+    width: 150px;
+    height: 100px;
+    left: 640px;
+    bottom: 275px;
+    opacity: 0;
+
+}
+
+.door-active {
+
+
+
+    position: absolute;
+
+
+    background-color: aqua;
+    width: 90px;
+    height: 350px;
+    left: 37px;
+    bottom: 120px;
+    opacity: 0;
+
+}
+
+.stereo-active {
+
+
+
+    position: absolute;
+    background-color: aqua;
+    width: 90px;
+    height: 90px;
+    left: 260px;
+    bottom: 250px;
+    opacity: 0;
+
+}
+
+.lamp-active {
+
+
+
+    position: absolute;
+    background-color: aqua;
+    width: 120px;
+    height: 450px;
+    left: 835px;
+    bottom: 40px;
+    opacity: 0;
+    
+
+}
+
+
