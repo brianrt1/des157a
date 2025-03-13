@@ -1,3 +1,7 @@
+html {
+    cursor: url('./images/cursor-re.png'), auto;
+    
+  }
 
 .overlay-1 {
  display:none;
@@ -126,6 +130,138 @@
     bottom: 719px;
     z-index: 100;
     
+}
+
+
+#splash-3{
+
+    display: block;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    z-index: 10000;
+    background-color: rgb(158, 84, 31);
+   
+
+}
+
+
+
+#splash-3 div {
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+   
+}
+
+#splash-3 h1 {
+    padding-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(252, 245, 240);
+}
+
+#splash-3 nav{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#splash-3 li {
+    list-style: none;
+    background-color: black;
+    width: 200px;
+    height: 30px;
+    margin-left: -40px;
+    margin-bottom: 20px;
+    align-content: center;
+
+}
+
+#splash-3 li:hover {
+
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    transform: scale(1.1)
+}
+
+#splash-3 a {
+ text-decoration: none;
+ font-family: Arial, Helvetica, sans-serif;
+ color: white;
+}
+
+
+#splash-4{
+
+    display: none;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    bottom: 719px;
+    z-index: 10000;
+    background-color: rgb(249, 245, 234);
+    animation-name: slide-in;
+    animation-duration: 2s;
+}
+
+@keyframes slide-in {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+
+#splash-4 div {
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+   
+}
+
+#splash-4 h1 {
+    padding-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(29, 15, 12);
+}
+
+#splash-4 nav{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#splash-4 li {
+    list-style: none;
+    background-color: black;
+    width: 200px;
+    height: 30px;
+    margin-left: -40px;
+    margin-bottom: 20px;
+    align-content: center;
+
+}
+
+#splash-4 li:hover {
+
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    transform: scale(1.1)
+}
+
+#splash-4 a {
+ text-decoration: none;
+ font-family: Arial, Helvetica, sans-serif;
+ color: white;
 }
 
 #splash-2 img {
@@ -274,5 +410,89 @@
     
 
 }
+
+.picture-active {
+
+
+
+    position: absolute;
+    background-color: aqua;
+    width: 130px;
+    height: 160px;
+    left: 250px;
+    bottom: 320px;
+    opacity: 0;
+    
+
+}
+
+.book-active {
+
+
+
+    position: absolute;
+    background-color: aqua;
+    width: 120px;
+    height: 80px;
+    left: 290px;
+    bottom: 160px;
+    opacity: 0;
+    
+
+}
+
+.overlay-5 {
+    display:none;
+    position: absolute;
+    z-index:99;
+    width: 110px;
+    height: 70px;
+    bottom: 164px;
+    left: 300px;
+}
+
+#book-open {
+
+    height: 100%;
+    width: 100%;
+   
+}
+
+.overlay-6 {
+    display:none;
+    position: absolute;
+    z-index:99;
+    width: 10px;
+    height: 9px;
+    bottom: 292px;
+    left: 301px;
+}
+
+#stereo-on {
+
+    height: 100%;
+    width: 100%;
+   
+}
+
+
+.overlay-7 {
+    display:none;
+    position: absolute;
+    z-index:99;
+    width: 100px;
+    height: 100px;
+    bottom: 350px;
+    left: 260px;
+}
+
+#picture-broken {
+
+    height: 100%;
+    width: 100%;
+   
+}
+
+
 
 
